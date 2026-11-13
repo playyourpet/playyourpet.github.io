@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Privacy Policy · Play Your Pet: My Pet Game</title>
+<meta name="description" content="Privacy policy of Play Your Pet: My Pet Game (Zaxlon Games). Gizlilik Politikası. Política de privacidad.">
+<link rel="icon" href="img/icon.png">
+<style>
+  /* Yazı tipleri sitenin kendi sunucusundan (Google Fonts yok: ziyaretçi IP'si üçüncü tarafa gitmesin) */
+  @font-face { font-family: Nunito; src: url("/assets/fonts/nunito-vf.woff") format("woff"); font-weight: 400 1000; font-display: swap; }
+  @font-face { font-family: "Lilita One"; src: url("/assets/fonts/lilita-one.woff") format("woff"); font-display: swap; }
+  :root {
+    color-scheme: light;
+    --bg: #fdedc7; --paper: #fff8e9; --line: #f0d39c; --line-2: #e8c07a;
+    --ink: #4a2c12; --ink-2: #7a5530; --orange: #f5a524; --orange-d: #d4821a; --link: #b8601a; --mint: #dff0e2; --mint-ink: #2f6b47;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 84px; }
+  body {
+    margin: 0; color: var(--ink); background-color: var(--bg);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%23e9c98d' fill-opacity='.28'%3E%3Cellipse cx='30' cy='38' rx='7' ry='6'/%3E%3Ccircle cx='20' cy='27' r='3'/%3E%3Ccircle cx='27' cy='22' r='3'/%3E%3Ccircle cx='35' cy='22' r='3'/%3E%3Ccircle cx='41' cy='28' r='3'/%3E%3Cellipse cx='88' cy='96' rx='6' ry='5' transform='rotate(-25 88 96)'/%3E%3Ccircle cx='79' cy='86' r='2.5'/%3E%3Ccircle cx='85' cy='80' r='2.5'/%3E%3Ccircle cx='93' cy='81' r='2.5'/%3E%3Ccircle cx='98' cy='88' r='2.5'/%3E%3C/g%3E%3C/svg%3E");
+    font: 500 16.5px/1.68 Nunito, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); text-underline-offset: 3px; overflow-wrap: anywhere; }
+  a:hover { color: var(--orange-d); }
+  strong { font-weight: 800; }
+
+  .bar { position: sticky; top: 0; z-index: 5; background: rgba(253,237,199,.93); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 2px solid var(--line); }
+  .bar-in { max-width: 1040px; margin: 0 auto; padding: 10px 20px; display: flex; align-items: center; gap: 12px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font: 22px/1 "Lilita One", Nunito, sans-serif; letter-spacing: .3px; margin-right: auto; }
+  .brand img { width: 38px; height: 38px; border-radius: 12px; box-shadow: 0 2px 0 var(--line-2); }
+  .langs { display: flex; gap: 6px; }
+  .langs a { font-weight: 800; font-size: 14px; text-decoration: none; color: var(--ink); background: var(--paper); border: 2px solid var(--line-2); border-radius: 999px; padding: 5px 13px 4px; }
+  .langs a[aria-current="true"] { background: var(--orange); border-color: var(--orange-d); color: #fff; box-shadow: 0 3px 0 var(--orange-d); text-shadow: 0 1px 0 rgba(120,60,0,.35); }
+
+  main { max-width: 1040px; margin: 0 auto; padding: 0 20px 64px; }
+  .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 28px; align-items: center; padding: 40px 0 26px; }
+  .eyebrow { margin: 0 0 6px; font-weight: 800; color: var(--orange-d); letter-spacing: .4px; }
+  h1 { font: 54px/1.04 "Lilita One", Nunito, sans-serif; margin: 0 0 14px; letter-spacing: .2px; color: var(--ink); }
+  .lead { font-size: 19px; line-height: 1.55; margin: 0 0 16px; color: var(--ink); max-width: 34em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0; font-size: 14.5px; color: var(--ink-2); }
+  .hero-art { margin: 0; justify-self: center; width: min(100%, 380px); }
+  .hero-art img { display: block; width: 100%; height: auto; border-radius: 32px; border: 3px solid var(--line); box-shadow: 0 8px 0 var(--line-2); transform: rotate(1.6deg); }
+
+  .chips { list-style: none; padding: 0; margin: 6px 0 22px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .chips li { display: flex; align-items: center; gap: 10px; background: var(--paper); border: 2px solid var(--line); border-radius: 18px; padding: 12px 14px; font-weight: 800; line-height: 1.3; font-size: 15px; }
+  .ic { flex: none; width: 42px; height: 42px; border-radius: 50%; background: var(--mint); display: grid; place-items: center; }
+  .ic svg { width: 24px; height: 24px; fill: none; stroke: var(--mint-ink); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+
+  .summary { background: var(--paper); border: 2px solid var(--line); border-left: 8px solid var(--orange); border-radius: 20px; padding: 18px 22px; }
+  .summary h2 { font: 24px/1.2 "Lilita One", Nunito, sans-serif; margin: 0 0 6px; }
+  .summary p { margin: 0 0 10px; } .summary p:last-child { margin: 0; }
+  .summary .intro { color: var(--ink-2); font-size: 15px; }
+
+  .toc { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 26px 0 6px; }
+  .toc span { font-weight: 800; color: var(--ink-2); margin-right: 4px; font-size: 14px; }
+  .toc a { text-decoration: none; font-weight: 700; font-size: 14px; color: var(--ink); background: rgba(255,248,233,.7); border: 1.5px dashed var(--line-2); border-radius: 999px; padding: 3px 12px; }
+  .toc a:hover { background: var(--paper); border-style: solid; }
+
+  .doc { background: var(--paper); border: 2px solid var(--line); border-radius: 26px; padding: 8px 30px 26px; margin-top: 12px; }
+  .doc h3 { font: 26px/1.2 "Lilita One", Nunito, sans-serif; margin: 34px 0 10px; display: flex; align-items: center; gap: 12px; color: var(--ink); }
+  .doc h3 .num { flex: none; width: 38px; height: 38px; border-radius: 50%; background: var(--orange); color: #fff; display: grid; place-items: center; font-size: 20px; box-shadow: 0 3px 0 var(--orange-d); text-shadow: 0 1px 0 rgba(120,60,0,.35); }
+  .doc h4 { font-size: 17.5px; font-weight: 800; margin: 22px 0 4px; }
+  .doc ul { padding-left: 0; list-style: none; margin: 8px 0; }
+  .doc ul li { position: relative; padding-left: 26px; margin: 9px 0; }
+  .doc ul li::before { content: ""; position: absolute; left: 4px; top: .62em; width: 10px; height: 10px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 4px #fde3b4; }
+  .tbl { overflow-x: auto; margin: 10px 0 6px; border: 2px solid var(--line); border-radius: 16px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; background: #fffdf7; }
+  th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1.5px solid #f6e3bf; }
+  tr:last-child td { border-bottom: 0; }
+  th { background: #fbe2b3; font-weight: 800; }
+  td:first-child { font-weight: 800; }
+
+  .ask { display: grid; grid-template-columns: 190px 1fr; gap: 22px; align-items: center; margin-top: 26px; background: var(--paper); border: 2px solid var(--line); border-radius: 26px; padding: 18px 26px 18px 18px; }
+  .ask img { width: 100%; height: auto; border-radius: 20px; }
+  .ask h2 { font: 26px/1.2 "Lilita One", Nunito, sans-serif; margin: 0 0 4px; }
+  .ask p { margin: 0 0 14px; }
+  .btn { display: inline-block; text-decoration: none; color: #fff; background: var(--orange); font-weight: 800; padding: 10px 22px 9px; border-radius: 16px; border: 2px solid var(--orange-d); box-shadow: 0 4px 0 var(--orange-d); text-shadow: 0 1px 0 rgba(120,60,0,.35); }
+  .btn:hover { color: #fff; transform: translateY(1px); box-shadow: 0 3px 0 var(--orange-d); }
+  .foot { text-align: center; color: var(--ink-2); font-size: 14px; margin-top: 30px; }
+
+  html.js .lang-sec { display: none; } html.js .lang-sec.on { display: block; }
+  html:not(.js) .lang-sec + .lang-sec { border-top: 3px dashed var(--line-2); margin-top: 40px; }
+  html:not(.js) .toc { display: none; }
+
+  @media (max-width: 860px) {
+    .chips { grid-template-columns: 1fr 1fr; }
+    .hero { grid-template-columns: 1fr; padding-top: 26px; }
+    .hero-art { width: min(78%, 320px); order: -1; }
+    h1 { font-size: 42px; }
+  }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    main, .bar-in { padding-left: 16px; padding-right: 16px; }
+    .brand span { display: none; }
+    h1 { font-size: 36px; }
+    .lead { font-size: 17px; }
+    .chips { grid-template-columns: 1fr; }
+    .doc { padding: 4px 18px 20px; border-radius: 22px; }
+    .doc h3 { font-size: 22px; }
+    .ask { grid-template-columns: 1fr; text-align: center; padding: 18px; }
+    .ask img { width: 64%; margin: 0 auto; }
+    table, thead, tbody, tr, th, td { display: block; }
+    tr:first-child { display: none; }
+    tr { border-bottom: 1.5px solid #f6e3bf; padding: 6px 0; } tr:last-child { border-bottom: 0; }
+    td { border: 0; padding: 4px 14px; }
+    td[data-label]::before { content: attr(data-label); display: block; font-size: 12.5px; font-weight: 800; color: var(--ink-2); text-transform: uppercase; letter-spacing: .4px; }
+  }
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="bar"><div class="bar-in">
+  <a class="brand" href="../"><img src="img/icon.png" width="38" height="38" alt=""><span>Play Your Pet</span></a>
+  <nav class="langs" aria-label="Language"><a href="#en" data-l="en">EN</a><a href="#tr" data-l="tr">TR</a><a href="#es" data-l="es">ES</a></nav>
+</div></div>
+<main>
+  <section class="lang-sec" id="en" lang="en" data-title="Privacy Policy · Play Your Pet: My Pet Game">
+    <header class="hero">
+      <div class="hero-txt">
+        <p class="eyebrow">Play Your Pet: My Pet Game</p>
+        <h1>Privacy Policy</h1>
+        <p class="lead">Your pet's photos and voice stay on your phone. This page explains, in plain words, exactly what the game does with data.</p>
+        <p class="meta"><span>Last updated: <strong>November 13, 2026</strong></span><span>Developer: <strong>Zaxlon Games</strong></span><span>Contact: <a href="mailto:zaxlonltd@gmail.com">zaxlonltd@gmail.com</a></span></p>
+      </div>
+      <figure class="hero-art"><img src="img/hero.jpg" width="760" height="760" alt=""></figure>
+    </header>
+    <ul class="chips">
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="3.5" width="14" height="25" rx="3.5"/><path d="M13.5 24.5h5"/><path d="M16 9.5c-1.9 0-3 1.3-3 2.9v1.6h6v-1.6c0-1.6-1.1-2.9-3-2.9z"/><rect x="12" y="14" width="8" height="6" rx="1.4"/></svg></span>Photos and sounds stay on your phone</li>
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="11" r="5"/><path d="M6.5 27c.8-5 4.6-8 9.5-8s8.7 3 9.5 8"/><path d="M5 5l22 22"/></svg></span>No account needed</li>
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M11 8h15M11 16h15M11 24h15"/><circle cx="6" cy="8" r="1.6"/><circle cx="6" cy="16" r="1.6"/><circle cx="6" cy="24" r="1.6"/></svg></span>4 services, all listed below</li>
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l10 4v7c0 6.5-4.3 11-10 13C10.3 26 6 21.5 6 15V8z"/><path d="M11.5 15.5l3.2 3.2 6-6.4"/></svg></span>We never sell your data</li>
+    </ul>
+    <div class="summary"><h2>In short</h2><p>No account is required. Your pet photos, voice recordings and microphone audio are kept on your device and are <strong>never uploaded to us</strong> — we do not run any servers. The App uses four third-party services that receive limited technical data: <strong>Google AdMob</strong> (ads), <strong>Google Analytics for Firebase</strong> (usage statistics that never include your photos, recordings or your pet's name), <strong>Google Play Billing</strong> (purchases) and <strong>Unity Technologies</strong> (purchase reporting and crash diagnostics of the game engine). Reminder notifications are scheduled on your device only. We do not sell your data.</p><p class="intro">This policy applies to the <strong>Play Your Pet: My Pet Game</strong> mobile app (the "App") developed by Zaxlon Games. The App lets you bring a photo and the voice of your own pet into mini games.</p></div>
+    <nav class="toc" aria-label="On this page"><span>On this page</span></nav>
+    <div class="doc">
+  
+
+  
+
+  <h3 id="en-1"><span class="num">1</span>Data that stays on your device</h3>
+  <ul>
+    <li><strong>Photos:</strong> Pet photos you pick from the gallery or take with the camera are saved in the App's private folder on your device for in-game use only. They are never uploaded to us and are not shared with the services listed below. The system picker is used; the App does not scan your gallery.</li>
+    <li><strong>Voice clips:</strong> Short sounds you record or select for the "pet voice" feature are stored only on the device and played as in-game effects.</li>
+    <li><strong>Voice control (microphone):</strong> If you choose "play with voice" in the Voice Pet game, microphone audio is processed in real time on the device only to measure loudness. Audio is <strong>not recorded, stored or transmitted</strong>.</li>
+    <li><strong>Game progress and Android backup:</strong> Scores, stars, in-game coins, items, streaks, settings and your pet's name are stored on your device. If backup is turned on in your phone's settings, Android may also back up this progress file (only the progress — <strong>never your pet photos or sounds</strong>) to your own Google account, so it can come back when you reinstall the App or set up a new phone. This backup is made and kept by Android/Google in your Google account; we cannot access it. You can turn it off in your phone's backup settings.</li>
+    <li><strong>Moving to a new phone:</strong> On Android 12 and later, if you use Android's device-to-device transfer while setting up a new phone, Android may copy the App's data (including your pet photos and sounds) directly to your own new device. This copy is made by Android; it is not sent to us.</li>
+    <li><strong>Notifications:</strong> If you allow notifications, reminders (for example when your pet is hungry) are scheduled on your device only — at most three a day (usually fewer, and fewer still if you have not played for a while) and never between 22:00 and 09:00. No server is involved. You can turn them off at any time in <em>Settings → Notifications</em> or in your phone's settings.</li>
+    <li><strong>Sharing:</strong> When you tap <em>Share</em>, the App creates a picture on your device (the game moment with your pet's photo, name and score) and opens your phone's share menu. The picture goes only to the app you choose; it is not sent to us.</li>
+  </ul>
+
+  <h3 id="en-2"><span class="num">2</span>Third-party services</h3>
+  <p>These services receive only the data described here. All transfers are encrypted in transit (HTTPS).</p>
+  <div class="tbl"><table>
+    <tr><th>Service</th><th>Data</th><th>Purpose</th></tr>
+    <tr><td>Google AdMob and Google's consent tool (UMP)</td><td>Advertising ID and app set ID, IP address (used to estimate approximate location), ad and app interactions (e.g. app launches, taps, video views), diagnostics (crash logs, performance), basic device information</td><td>Showing and measuring ads, analytics, fraud prevention; asking for and storing your ad consent</td></tr>
+    <tr><td>Google Analytics for Firebase</td><td>A random app instance ID, in-app events (e.g. which mini game was started or finished and its score, pet care actions such as feeding, sharing, ad views), session and engagement time, app version, device model, OS version, language, approximate country and city (estimated from the IP address), advertising ID if your ad consent allows it</td><td>Understanding how the App is used (which games are played, where players stop) in order to improve it</td></tr>
+    <tr><td>Google Play Billing</td><td>Purchase record (order ID, product, time, purchase token)</td><td>Processing payments, delivering and restoring items</td></tr>
+    <tr><td>Unity Technologies (Unity IAP, Unity Cloud Diagnostics)</td><td>Purchase events with the Google Play purchase record and signature, app version, device model, OS version, language, storage size, a random Unity installation ID (and the advertising ID, if enabled); crash reports and diagnostics</td><td>Processing and reporting purchases (analytics), fixing crashes and errors</td></tr>
+  </table></div>
+
+  <h4>2.1 Advertising (Google AdMob)</h4>
+  <p>The App shows <strong>optional rewarded video ads</strong> in some places (watching them is never required) and, from time to time, a <strong>short ad between games</strong> — only after a finished game, never during play and not in your first day of play. Ads between games can be turned off permanently with the one-time <strong>Remove Ads</strong> purchase. Google's Mobile Ads SDK starts when the App opens and processes the data listed above; Google may also use this data under its own policies. In the EEA, the UK and Switzerland, Google's consent form is shown before ads; you can change your choice at any time in <em>Settings → Privacy options</em>. You can reset or delete your advertising ID in your device settings. Ad content is limited to family-friendly (PG) ratings.<br>
+  Google's policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> · <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from partner sites</a></p>
+
+  <h4>2.2 Purchases (Google Play Billing)</h4>
+  <p>In-app purchases are handled exclusively by <strong>Google Play Billing</strong>. We never receive your payment details (such as your card number). Google Play gives the App a purchase record so that your item can be delivered, and restored after a reinstall.</p>
+
+  <h4>2.3 Unity Technologies</h4>
+  <p>The App is built with the Unity engine. When you make or attempt a purchase, and when existing purchases are confirmed, Unity's in-app purchase library (<strong>Unity IAP</strong>) sends purchase events to Unity: the product, the Google Play purchase record and its signature, the app version, device model, OS version, language, device storage size and a random installation ID that Unity creates for this installation (and the advertising ID, if enabled). Unity uses this data to process and report purchases. The App may also send crash reports and error diagnostics to Unity (<strong>Unity Cloud Diagnostics</strong>): the error message and stack trace, the last few log lines, device model, OS version and app version. Crash reports never include your photos or recordings.<br>
+  Unity's policy: <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a></p>
+
+  <h4>2.4 Usage statistics (Google Analytics for Firebase)</h4>
+  <p>The App uses <strong>Google Analytics for Firebase</strong> to understand which games are played and where players stop, so that we can improve it. These statistics <strong>never include your pet photos, recordings, your pet's name or anything else you add</strong>. In the EEA, the UK and Switzerland, statistics are only collected after Google's consent form, and your choice there is applied (Google Consent Mode); you can change it at any time in <em>Settings → Privacy options</em>. Analytics data is kept for 14 months and then deleted automatically. Google signals are turned off.<br>
+  Google's policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> · <a href="https://firebase.google.com/support/privacy">Firebase privacy</a></p>
+
+  <h3 id="en-3"><span class="num">3</span>What we do not collect</h3>
+  <p>We do not run servers and do not receive your personal data ourselves. The App does not ask for your name, email, phone number, precise location or contacts, and it has no accounts. Apart from the services listed above, the App contains no other analytics or tracking SDK. We do not sell your data.</p>
+
+  <h3 id="en-4"><span class="num">4</span>Permissions</h3>
+  <div class="tbl"><table>
+    <tr><th>Permission</th><th>When / why</th></tr>
+    <tr><td>Photos / media</td><td>Only when you choose a photo (e.g. "Add Your Pet"), through the system picker.</td></tr>
+    <tr><td>Camera</td><td>Only when you choose to take a photo.</td></tr>
+    <tr><td>Microphone</td><td>Only when you start a recording or choose "play with voice".</td></tr>
+    <tr><td>Notifications (Android 13+)</td><td>Only if you allow it when Android asks (for example when you first open the App or on the in-game card) or turn on <em>Notifications</em> in Settings. Used only for the on-device reminders described above.</td></tr>
+    <tr><td>Internet</td><td>To load ads, process purchases and send the usage statistics and diagnostics described above. The game can be played offline.</td></tr>
+  </table></div>
+
+  <h3 id="delete"><span class="num">5</span>Deleting your data</h3>
+  <p>You can remove your pet's photos with "Reset Pet" in the App, and most other photos and sounds with the reset or delete option next to them. "My Photos" lets you view and download your photos. To delete everything at once, uninstall the App: this permanently deletes all App data on the device and resets the Unity installation ID and the Firebase app instance ID. Usage statistics are not linked to your name, email or any account, so we cannot find them from an email address; they are deleted automatically after 14 months. You can reset or delete your advertising ID in your device settings and manage your Google data at <a href="https://myaccount.google.com">myaccount.google.com</a>. For data processed by Unity, see Unity's privacy policy above or contact us and we will help forward your request. We keep no data about you on our own servers, so there is no account to delete.</p>
+  <p><strong>How to request deletion:</strong> email <a href="mailto:zaxlonltd@gmail.com?subject=Play%20Your%20Pet%20-%20data%20deletion">zaxlonltd@gmail.com</a> with the subject "Play Your Pet – data deletion". We will reply and forward your request to Unity for the purchase and crash data it processes. <strong>What is kept:</strong> Google Play keeps your purchase records under Google's own policies (for example for tax and refund purposes), and progress backed up by Android stays in your own Google account until you delete it there or turn backup off.</p>
+
+  <h3 id="en-6"><span class="num">6</span>Children</h3>
+  <p>The App is intended for users aged 13 and over and does not knowingly collect personal information from children under 13. If you believe a child has provided us with data, please contact us.</p>
+
+  <h3 id="en-7"><span class="num">7</span>Security and retention</h3>
+  <p>On-device data is kept in the App's private storage, protected by Android's app sandbox, until you delete it or uninstall the App. Data sent to Google and Unity is encrypted in transit and kept according to their policies.</p>
+
+  <h3 id="en-web"><span class="num">8</span>This website</h3>
+  <p>zaxlongames.com is a static website hosted on GitHub Pages. It sets no cookies, uses no analytics, advertising or tracking tools, and loads no fonts, scripts or videos from other companies. Your browser keeps only your language choice (in local storage) and, for a single visit, the source name in the link you opened, such as <em>?src=tiktok</em> (in session storage). The source name contains no personal data and is passed to Google Play only when you tap the Google Play button, so that Google Play can show us how many installs came from each channel. To deliver and protect the site, GitHub processes visitors' IP addresses in its server logs (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>). If you email us, we use your message only to reply to you.</p>
+
+  <h3 id="en-8"><span class="num">9</span>Changes and contact</h3>
+  <p>If this policy is updated, the new version will be posted on this page with a new "last updated" date. Questions: <a href="mailto:zaxlonltd@gmail.com">zaxlonltd@gmail.com</a></p>
+
+  
+    </div>
+    <aside class="ask">
+      <img src="img/friends.jpg" width="560" height="560" alt="">
+      <div><h2>Something unclear?</h2><p>Write to us. The developer reads and answers every email personally.</p><a class="btn" href="mailto:zaxlonltd@gmail.com?subject=Play%20Your%20Pet">Email us</a></div>
+    </aside>
+  </section>
+  <section class="lang-sec" id="tr" lang="tr" data-title="Gizlilik Politikası · Play Your Pet">
+    <header class="hero">
+      <div class="hero-txt">
+        <p class="eyebrow">Play Your Pet</p>
+        <h1>Gizlilik Politikası</h1>
+        <p class="lead">Petinizin fotoğrafları ve sesi telefonunuzda kalır. Oyunun verilerle tam olarak ne yaptığını bu sayfada açık bir dille anlatıyoruz.</p>
+        <p class="meta"><span>Son güncelleme: <strong>13 Kasım 2026</strong></span><span>Geliştirici: <strong>Zaxlon Games</strong></span><span>İletişim: <a href="mailto:zaxlonltd@gmail.com">zaxlonltd@gmail.com</a></span></p>
+      </div>
+      <figure class="hero-art"><img src="img/hero.jpg" width="760" height="760" alt=""></figure>
+    </header>
+    <ul class="chips">
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="3.5" width="14" height="25" rx="3.5"/><path d="M13.5 24.5h5"/><path d="M16 9.5c-1.9 0-3 1.3-3 2.9v1.6h6v-1.6c0-1.6-1.1-2.9-3-2.9z"/><rect x="12" y="14" width="8" height="6" rx="1.4"/></svg></span>Fotoğraf ve sesler telefonunuzda kalır</li>
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="11" r="5"/><path d="M6.5 27c.8-5 4.6-8 9.5-8s8.7 3 9.5 8"/><path d="M5 5l22 22"/></svg></span>Hesap gerekmez</li>
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M11 8h15M11 16h15M11 24h15"/><circle cx="6" cy="8" r="1.6"/><circle cx="6" cy="16" r="1.6"/><circle cx="6" cy="24" r="1.6"/></svg></span>4 hizmet, hepsi aşağıda</li>
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l10 4v7c0 6.5-4.3 11-10 13C10.3 26 6 21.5 6 15V8z"/><path d="M11.5 15.5l3.2 3.2 6-6.4"/></svg></span>Verilerinizi asla satmayız</li>
+    </ul>
+    <div class="summary"><h2>Kısaca</h2><p>Hesap açmanız gerekmez. Pet fotoğraflarınız, ses kayıtlarınız ve mikrofon sesiniz cihazınızda kalır ve <strong>bize hiçbir zaman yüklenmez</strong> — sunucumuz yoktur. Uygulama, sınırlı teknik veri alan dört üçüncü taraf hizmet kullanır: <strong>Google AdMob</strong> (reklamlar), <strong>Google Analytics for Firebase</strong> (fotoğraflarınızı, kayıtlarınızı ya da petinizin adını asla içermeyen kullanım istatistikleri), <strong>Google Play Faturalandırma</strong> (satın almalar) ve <strong>Unity Technologies</strong> (oyun motorunun satın alma raporlaması ve çökme tanılaması). Hatırlatma bildirimleri yalnızca cihazınızda planlanır. Verilerinizi satmayız.</p><p class="intro">Bu politika, Zaxlon Games tarafından geliştirilen <strong>Play Your Pet</strong> mobil uygulaması ("Uygulama") için geçerlidir. Uygulama, kendi evcil hayvanınızın fotoğrafını ve sesini mini oyunlara taşımanızı sağlar.</p></div>
+    <nav class="toc" aria-label="Bu sayfada"><span>Bu sayfada</span></nav>
+    <div class="doc">
+  
+
+  
+
+  <h3 id="tr-1"><span class="num">1</span>Cihazınızda kalan veriler</h3>
+  <ul>
+    <li><strong>Fotoğraflar:</strong> Galeriden seçtiğiniz ya da kamerayla çektiğiniz evcil hayvan fotoğrafları yalnızca oyun içinde kullanılmak üzere uygulamanın cihazdaki özel klasörüne kaydedilir. Bize hiçbir zaman yüklenmez, aşağıdaki hizmetlerle paylaşılmaz. Seçim için cihazın standart seçicisi kullanılır; uygulama galerinizi taramaz.</li>
+    <li><strong>Ses kayıtları:</strong> "Pet sesi" özelliğiyle kaydettiğiniz ya da seçtiğiniz kısa sesler yalnızca cihazda saklanır ve oyun içi efekt olarak çalınır.</li>
+    <li><strong>Sesle oynama (mikrofon):</strong> Sesli Dost oyununda "sesle oyna" seçeneğini seçerseniz mikrofon sesi yalnızca anlık ses seviyesini ölçmek için cihazda gerçek zamanlı işlenir. Ses <strong>kaydedilmez, saklanmaz, gönderilmez</strong>.</li>
+    <li><strong>Oyun ilerlemesi ve Android yedeği:</strong> Skorlar, yıldızlar, oyun içi para, eşyalar, seri, ayarlar ve petinizin adı cihazda saklanır. Telefonunuzun ayarlarında yedekleme açıksa Android bu ilerleme dosyasını (yalnızca ilerlemeyi — <strong>pet fotoğraflarınızı ve seslerinizi asla</strong>) kendi Google hesabınıza yedekleyebilir; böylece uygulamayı yeniden yüklediğinizde ya da yeni telefon kurduğunuzda ilerlemeniz geri gelir. Bu yedeği Android/Google sizin Google hesabınızda oluşturur ve saklar; biz erişemeyiz. Telefonunuzun yedekleme ayarlarından kapatabilirsiniz.</li>
+    <li><strong>Yeni telefona geçiş:</strong> Android 12 ve sonrasında, yeni telefon kurulumunda Android'in cihazdan cihaza aktarımını kullanırsanız Android, uygulamanın verilerini (pet fotoğraflarınız ve sesleriniz dahil) doğrudan kendi yeni cihazınıza kopyalayabilir. Bu kopyalamayı Android yapar; veriler bize gönderilmez.</li>
+    <li><strong>Bildirimler:</strong> Bildirimlere izin verirseniz hatırlatmalar (ör. petiniz acıktığında) yalnızca cihazınızda planlanır — günde en fazla üç tane (çoğu gün daha az; bir süre oynamazsanız daha da seyrek), 22:00 ile 09:00 arasında asla. Hiçbir sunucu kullanılmaz. İstediğiniz zaman <em>Ayarlar → Bildirimler</em> bölümünden ya da telefonunuzun ayarlarından kapatabilirsiniz.</li>
+    <li><strong>Paylaşım:</strong> <em>Paylaş</em>'a dokunduğunuzda uygulama cihazınızda bir görsel oluşturur (petinizin fotoğrafı, adı ve skoruyla oyun anı) ve telefonunuzun paylaşım menüsünü açar. Görsel yalnızca seçtiğiniz uygulamaya gider; bize gönderilmez.</li>
+  </ul>
+
+  <h3 id="tr-2"><span class="num">2</span>Üçüncü taraf hizmetler</h3>
+  <p>Bu hizmetler yalnızca burada açıklanan verileri alır. Tüm aktarımlar şifrelidir (HTTPS).</p>
+  <div class="tbl"><table>
+    <tr><th>Hizmet</th><th>Veri</th><th>Amaç</th></tr>
+    <tr><td>Google AdMob ve Google onay aracı (UMP)</td><td>Reklam kimliği ve uygulama grubu kimliği (app set ID), IP adresi (yaklaşık konumu tahmin etmek için), reklam ve uygulama etkileşimleri (ör. uygulama açılışı, dokunma, video izleme), tanılama (çökme günlükleri, performans), temel cihaz bilgileri</td><td>Reklam gösterme ve ölçme, analiz, dolandırıcılık önleme; reklam onayınızı sorma ve saklama</td></tr>
+    <tr><td>Google Analytics for Firebase</td><td>Rastgele bir uygulama örneği kimliği, uygulama içi olaylar (ör. hangi mini oyunun başlatıldığı ya da bittiği ve skoru, besleme gibi pet bakım işlemleri, paylaşım, reklam izleme), oturum ve etkileşim süresi, uygulama sürümü, cihaz modeli, işletim sistemi sürümü, dil, yaklaşık ülke ve şehir (IP adresinden tahmin edilir), reklam onayınız izin veriyorsa reklam kimliği</td><td>Uygulamanın nasıl kullanıldığını (hangi oyunların oynandığını, oyuncuların nerede bıraktığını) anlayıp uygulamayı geliştirmek</td></tr>
+    <tr><td>Google Play Faturalandırma</td><td>Satın alma kaydı (sipariş numarası, ürün, zaman, satın alma jetonu)</td><td>Ödemeyi işleme, ürünü teslim etme ve geri yükleme</td></tr>
+    <tr><td>Unity Technologies (Unity IAP, Unity Cloud Diagnostics)</td><td>Google Play satın alma kaydı ve imzasını içeren satın alma olayları, uygulama sürümü, cihaz modeli, işletim sistemi sürümü, dil, depolama boyutu, rastgele bir Unity kurulum kimliği (etkinse reklam kimliği); çökme raporları ve tanılama</td><td>Satın almaları işleme ve raporlama (analiz), çökme ve hataları düzeltme</td></tr>
+  </table></div>
+
+  <h4>2.1 Reklamlar (Google AdMob)</h4>
+  <p>Uygulama bazı yerlerde <strong>isteğe bağlı ödüllü video reklam</strong> gösterir (izlemek hiçbir zaman zorunlu değildir) ve zaman zaman <strong>oyunlar arasında kısa bir reklam</strong> çıkar — yalnızca biten bir oyundan sonra; oyun sırasında ve oynadığınız ilk gün çıkmaz. Oyunlar arası reklamlar tek seferlik <strong>Reklamları Kaldır</strong> satın almasıyla kalıcı olarak kapatılabilir. Google'ın reklam SDK'sı uygulama açılınca başlar ve yukarıdaki verileri işler; Google bu verileri kendi politikaları kapsamında da kullanabilir. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de reklamlardan önce Google'ın onay formu gösterilir; tercihinizi istediğiniz zaman <em>Ayarlar → Gizlilik seçenekleri</em> bölümünden değiştirebilirsiniz. Reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya silebilirsiniz. Reklam içeriği ailelere uygun (PG) derecelerle sınırlandırılmıştır.<br>
+  Google'ın politikası: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> · <a href="https://policies.google.com/technologies/partner-sites">Google ortak sitelerde verileri nasıl kullanır</a></p>
+
+  <h4>2.2 Satın almalar (Google Play Faturalandırma)</h4>
+  <p>Uygulama içi satın almalar yalnızca <strong>Google Play Faturalandırma</strong> üzerinden yapılır. Ödeme bilgileriniz (ör. kart numaranız) bize ulaşmaz. Google Play, ürününüzün teslim edilmesi ve yeniden kurulumdan sonra geri yüklenmesi için uygulamaya bir satın alma kaydı verir.</p>
+
+  <h4>2.3 Unity Technologies</h4>
+  <p>Uygulama Unity oyun motoruyla geliştirilmiştir. Bir satın alma yaptığınızda veya denediğinizde ve mevcut satın almalar doğrulanırken Unity'nin satın alma kitaplığı (<strong>Unity IAP</strong>) Unity'ye satın alma olayları gönderir: ürün, Google Play satın alma kaydı ve imzası, uygulama sürümü, cihaz modeli, işletim sistemi sürümü, dil, cihaz depolama boyutu ve Unity'nin bu kurulum için oluşturduğu rastgele bir kurulum kimliği (etkinse reklam kimliği). Unity bu verileri satın almaları işlemek ve raporlamak için kullanır. Uygulama ayrıca çökme raporlarını ve hata tanılamasını Unity'ye gönderebilir (<strong>Unity Cloud Diagnostics</strong>): hata mesajı ve yığın izi, son birkaç günlük satırı, cihaz modeli, işletim sistemi sürümü ve uygulama sürümü. Çökme raporları fotoğraflarınızı veya kayıtlarınızı asla içermez.<br>
+  Unity'nin politikası: <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a></p>
+
+  <h4>2.4 Kullanım istatistikleri (Google Analytics for Firebase)</h4>
+  <p>Uygulama, hangi oyunların oynandığını ve oyuncuların nerede bıraktığını anlamak ve uygulamayı geliştirmek için <strong>Google Analytics for Firebase</strong> kullanır. Bu istatistikler <strong>pet fotoğraflarınızı, kayıtlarınızı, petinizin adını ya da eklediğiniz başka hiçbir içeriği asla içermez</strong>. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de istatistikler yalnızca Google'ın onay formundan sonra toplanır ve oradaki tercihiniz uygulanır (Google onay modu); tercihinizi istediğiniz zaman <em>Ayarlar → Gizlilik seçenekleri</em> bölümünden değiştirebilirsiniz. Analiz verileri 14 ay saklanır, ardından otomatik olarak silinir. Google sinyalleri kapalıdır.<br>
+  Google'ın politikası: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> · <a href="https://firebase.google.com/support/privacy">Firebase gizliliği</a></p>
+
+  <h3 id="tr-3"><span class="num">3</span>Toplamadığımız veriler</h3>
+  <p>Sunucu işletmeyiz ve kişisel verilerinizi kendimiz almayız. Uygulama adınızı, e-postanızı, telefon numaranızı, kesin konumunuzu veya kişilerinizi istemez; hesap sistemi yoktur. Yukarıda sayılan hizmetler dışında uygulamada başka analitik veya izleme SDK'sı yoktur. Verilerinizi satmayız.</p>
+
+  <h3 id="tr-4"><span class="num">4</span>İzinler</h3>
+  <div class="tbl"><table>
+    <tr><th>İzin</th><th>Ne zaman / neden</th></tr>
+    <tr><td>Fotoğraflar / medya</td><td>Yalnızca siz bir fotoğraf seçtiğinizde (ör. "Hayvanını Ekle"), sistem seçicisiyle.</td></tr>
+    <tr><td>Kamera</td><td>Yalnızca siz fotoğraf çekmeyi seçtiğinizde.</td></tr>
+    <tr><td>Mikrofon</td><td>Yalnızca ses kaydı başlattığınızda veya "sesle oyna"yı seçtiğinizde.</td></tr>
+    <tr><td>Bildirimler (Android 13+)</td><td>Yalnızca Android sorduğunda (ör. uygulamayı ilk açtığınızda ya da oyundaki kartta) izin verirseniz veya Ayarlar'da <em>Bildirimler</em>'i açarsanız. Yalnızca yukarıda açıklanan, cihazda planlanan hatırlatmalar için kullanılır.</td></tr>
+    <tr><td>İnternet</td><td>Reklamları yüklemek, satın almaları işlemek ve yukarıda açıklanan kullanım istatistiklerini ve tanılamayı göndermek için. Oyun internetsiz de oynanabilir.</td></tr>
+  </table></div>
+
+  <h3 id="silme"><span class="num">5</span>Verilerinizi silme</h3>
+  <p>Dostunuzun fotoğraflarını uygulamadaki "Peti Sıfırla" ile, diğer fotoğraf ve seslerin çoğunu yanlarındaki sıfırlama ya da silme seçeneğiyle kaldırabilirsiniz. "Fotoğraflarım" ekranı fotoğraflarınızı görmenizi ve indirmenizi sağlar. Hepsini birden silmek için uygulamayı kaldırın: bu, cihazdaki tüm uygulama verilerini kalıcı olarak siler; Unity kurulum kimliğini ve Firebase uygulama örneği kimliğini sıfırlar. Kullanım istatistikleri adınıza, e-postanıza ya da herhangi bir hesaba bağlı olmadığından bir e-posta adresinden yola çıkarak bulunamaz; 14 ay sonra otomatik olarak silinir. Reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya silebilir, Google verilerinizi <a href="https://myaccount.google.com">myaccount.google.com</a> adresinden yönetebilirsiniz. Unity'nin işlediği veriler için yukarıdaki Unity politikasına bakabilir ya da bize yazabilirsiniz; talebinizi iletmenize yardımcı oluruz. Kendi sunucularımızda sizinle ilgili veri tutmadığımızdan silinecek hesap yoktur.</p>
+  <p><strong>Silme talebi nasıl yapılır:</strong> <a href="mailto:zaxlonltd@gmail.com?subject=Play%20Your%20Pet%20-%20veri%20silme">zaxlonltd@gmail.com</a> adresine "Play Your Pet – veri silme" konulu bir e-posta gönderin. Size yanıt verir, Unity'nin işlediği satın alma ve çökme verileri için talebinizi Unity'ye iletiriz. <strong>Saklanmaya devam edenler:</strong> Google Play satın alma kayıtlarınızı kendi politikaları kapsamında (ör. vergi ve iade amaçlarıyla) saklar; Android'in yedeklediği ilerleme ise siz oradan silene ya da yedeklemeyi kapatana kadar kendi Google hesabınızda kalır.</p>
+
+  <h3 id="tr-6"><span class="num">6</span>Çocuklar</h3>
+  <p>Uygulama 13 yaş ve üzeri kullanıcılar için tasarlanmıştır ve 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamaz. Bir çocuğun bize veri ilettiğini düşünüyorsanız lütfen bizimle iletişime geçin.</p>
+
+  <h3 id="tr-7"><span class="num">7</span>Güvenlik ve saklama</h3>
+  <p>Cihazdaki veriler uygulamanın özel klasöründe tutulur ve siz silene veya uygulamayı kaldırana kadar Android'in uygulama yalıtımıyla korunur. Google ve Unity'ye gönderilen veriler aktarım sırasında şifrelenir ve bu şirketlerin politikalarına göre saklanır.</p>
+
+  <h3 id="tr-web"><span class="num">8</span>Bu web sitesi</h3>
+  <p>zaxlongames.com, GitHub Pages üzerinde barındırılan statik bir web sitesidir. Çerez kullanmaz; analiz, reklam ya da takip aracı yoktur ve başka şirketlerden yazı tipi, betik veya video yüklemez. Tarayıcınız yalnızca dil tercihinizi (yerel depolamada) ve tek bir ziyaret boyunca açtığınız bağlantıdaki kaynak adını, örneğin <em>?src=tiktok</em> (oturum depolamasında) tutar. Kaynak adı kişisel veri içermez ve yalnızca Google Play düğmesine bastığınızda Google Play'e iletilir; böylece Google Play bize hangi kanaldan kaç kurulum geldiğini gösterebilir. Siteyi sunmak ve korumak için GitHub, ziyaretçilerin IP adreslerini sunucu kayıtlarında işler (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Gizlilik Bildirimi</a>). Bize e-posta gönderirseniz mesajınızı yalnızca size yanıt vermek için kullanırız.</p>
+
+  <h3 id="tr-8"><span class="num">9</span>Değişiklikler ve iletişim</h3>
+  <p>Bu politika güncellenirse yeni sürüm bu sayfada yayımlanır ve "son güncelleme" tarihi yenilenir. Sorularınız için: <a href="mailto:zaxlonltd@gmail.com">zaxlonltd@gmail.com</a></p>
+
+  
+    </div>
+    <aside class="ask">
+      <img src="img/friends.jpg" width="560" height="560" alt="">
+      <div><h2>Aklınıza takılan bir şey mi var?</h2><p>Bize yazın. Her e-postayı geliştiricinin kendisi okur ve yanıtlar.</p><a class="btn" href="mailto:zaxlonltd@gmail.com?subject=Play%20Your%20Pet">E-posta gönder</a></div>
+    </aside>
+  </section>
+  <section class="lang-sec" id="es" lang="es" data-title="Política de privacidad · Play Your Pet">
+    <header class="hero">
+      <div class="hero-txt">
+        <p class="eyebrow">Play Your Pet</p>
+        <h1>Política de privacidad</h1>
+        <p class="lead">Las fotos y la voz de tu mascota se quedan en tu teléfono. Aquí te explicamos con palabras sencillas qué hace el juego con los datos.</p>
+        <p class="meta"><span>Última actualización: <strong>13 de noviembre de 2026</strong></span><span>Desarrollador: <strong>Zaxlon Games</strong></span><span>Contacto: <a href="mailto:zaxlonltd@gmail.com">zaxlonltd@gmail.com</a></span></p>
+      </div>
+      <figure class="hero-art"><img src="img/hero.jpg" width="760" height="760" alt=""></figure>
+    </header>
+    <ul class="chips">
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="3.5" width="14" height="25" rx="3.5"/><path d="M13.5 24.5h5"/><path d="M16 9.5c-1.9 0-3 1.3-3 2.9v1.6h6v-1.6c0-1.6-1.1-2.9-3-2.9z"/><rect x="12" y="14" width="8" height="6" rx="1.4"/></svg></span>Fotos y sonidos se quedan en tu teléfono</li>
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="11" r="5"/><path d="M6.5 27c.8-5 4.6-8 9.5-8s8.7 3 9.5 8"/><path d="M5 5l22 22"/></svg></span>Sin cuenta</li>
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M11 8h15M11 16h15M11 24h15"/><circle cx="6" cy="8" r="1.6"/><circle cx="6" cy="16" r="1.6"/><circle cx="6" cy="24" r="1.6"/></svg></span>4 servicios, todos abajo</li>
+      <li><span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l10 4v7c0 6.5-4.3 11-10 13C10.3 26 6 21.5 6 15V8z"/><path d="M11.5 15.5l3.2 3.2 6-6.4"/></svg></span>Nunca vendemos tus datos</li>
+    </ul>
+    <div class="summary"><h2>En resumen</h2><p>No necesitas una cuenta. Las fotos de tu mascota, tus grabaciones y el audio del micrófono se quedan en tu dispositivo y <strong>nunca se nos envían</strong> — no tenemos servidores. La Aplicación usa cuatro servicios de terceros que reciben datos técnicos limitados: <strong>Google AdMob</strong> (anuncios), <strong>Google Analytics for Firebase</strong> (estadísticas de uso que nunca incluyen tus fotos, grabaciones ni el nombre de tu mascota), <strong>Google Play Billing</strong> (compras) y <strong>Unity Technologies</strong> (informes de compras y diagnóstico de errores del motor del juego). Las notificaciones de recordatorio se programan solo en tu dispositivo. No vendemos tus datos.</p><p class="intro">Esta política se aplica a la aplicación móvil <strong>Play Your Pet</strong> (la "Aplicación"), desarrollada por Zaxlon Games. La Aplicación te permite llevar la foto y la voz de tu propia mascota a minijuegos.</p></div>
+    <nav class="toc" aria-label="En esta página"><span>En esta página</span></nav>
+    <div class="doc">
+  
+
+  
+
+  <h3 id="es-1"><span class="num">1</span>Datos que permanecen en tu dispositivo</h3>
+  <ul>
+    <li><strong>Fotos:</strong> Las fotos de mascotas que eliges de la galería o tomas con la cámara se guardan en la carpeta privada de la Aplicación solo para usarlas en el juego. Nunca se nos envían ni se comparten con los servicios indicados más abajo. Se usa el selector del sistema; la Aplicación no explora tu galería.</li>
+    <li><strong>Sonidos:</strong> Los sonidos cortos que grabas o eliges para la función "voz de mascota" se guardan solo en el dispositivo y se reproducen como efectos del juego.</li>
+    <li><strong>Control por voz (micrófono):</strong> Si eliges "jugar con la voz" en el juego Mascota por Voz, el audio del micrófono se procesa en tiempo real en el dispositivo solo para medir el volumen. El audio <strong>no se graba, no se guarda y no se envía</strong>.</li>
+    <li><strong>Progreso del juego y copia de seguridad de Android:</strong> Puntuaciones, estrellas, monedas, objetos, rachas, ajustes y el nombre de tu mascota se guardan en tu dispositivo. Si la copia de seguridad está activada en los ajustes del teléfono, Android puede guardar también este archivo de progreso (solo el progreso, <strong>nunca las fotos ni los sonidos de tu mascota</strong>) en tu propia cuenta de Google, para que vuelva al reinstalar la Aplicación o configurar un teléfono nuevo. Esa copia la crea y la guarda Android/Google en tu cuenta de Google; nosotros no podemos acceder a ella. Puedes desactivarla en los ajustes de copia de seguridad del teléfono.</li>
+    <li><strong>Cambio de teléfono:</strong> En Android 12 o posterior, si usas la transferencia de dispositivo a dispositivo de Android al configurar un teléfono nuevo, Android puede copiar los datos de la Aplicación (incluidas las fotos y los sonidos de tu mascota) directamente a tu propio dispositivo nuevo. Esa copia la hace Android; no se nos envía.</li>
+    <li><strong>Notificaciones:</strong> Si permites las notificaciones, los recordatorios (p. ej. cuando tu mascota tiene hambre) se programan solo en tu dispositivo — como máximo tres al día (normalmente menos, y aún menos si llevas un tiempo sin jugar) y nunca entre las 22:00 y las 09:00. No se usa ningún servidor. Puedes desactivarlas en cualquier momento en <em>Ajustes → Notificaciones</em> o en los ajustes del teléfono.</li>
+    <li><strong>Compartir:</strong> Cuando tocas <em>Compartir</em>, la Aplicación crea una imagen en tu dispositivo (un momento del juego con la foto, el nombre y la puntuación de tu mascota) y abre el menú para compartir del teléfono. La imagen solo va a la aplicación que elijas; no se nos envía.</li>
+  </ul>
+
+  <h3 id="es-2"><span class="num">2</span>Servicios de terceros</h3>
+  <p>Estos servicios solo reciben los datos descritos aquí. Todas las transferencias están cifradas (HTTPS).</p>
+  <div class="tbl"><table>
+    <tr><th>Servicio</th><th>Datos</th><th>Finalidad</th></tr>
+    <tr><td>Google AdMob y herramienta de consentimiento de Google (UMP)</td><td>ID de publicidad e ID de conjunto de apps, dirección IP (para estimar la ubicación aproximada), interacciones con anuncios y con la app (p. ej. aperturas, toques, vídeos vistos), diagnóstico (registros de fallos, rendimiento), información básica del dispositivo</td><td>Mostrar y medir anuncios, analítica, prevención del fraude; pedir y guardar tu consentimiento publicitario</td></tr>
+    <tr><td>Google Analytics for Firebase</td><td>Un ID de instancia de la app aleatorio, eventos dentro de la app (p. ej. qué minijuego se inicia o termina y su puntuación, cuidados de la mascota como darle de comer, compartir, ver anuncios), duración de la sesión y de la interacción, versión de la app, modelo del dispositivo, versión del sistema, idioma, país y ciudad aproximados (estimados a partir de la dirección IP), ID de publicidad si tu consentimiento publicitario lo permite</td><td>Entender cómo se usa la Aplicación (qué juegos se juegan, dónde abandonan los jugadores) para mejorarla</td></tr>
+    <tr><td>Google Play Billing</td><td>Registro de compra (n.º de pedido, producto, fecha, token de compra)</td><td>Procesar pagos, entregar y restaurar artículos</td></tr>
+    <tr><td>Unity Technologies (Unity IAP, Unity Cloud Diagnostics)</td><td>Eventos de compra con el registro y la firma de Google Play, versión de la app, modelo del dispositivo, versión del sistema, idioma, tamaño de almacenamiento, un ID de instalación aleatorio de Unity (y el ID de publicidad, si está activado); informes de fallos y diagnóstico</td><td>Procesar e informar de compras (analítica), corregir fallos y errores</td></tr>
+  </table></div>
+
+  <h4>2.1 Publicidad (Google AdMob)</h4>
+  <p>La Aplicación muestra <strong>anuncios de vídeo con recompensa opcionales</strong> (verlos nunca es obligatorio) y, de vez en cuando, un <strong>anuncio breve entre partidas</strong>: solo después de terminar una partida, nunca mientras juegas ni durante tu primer día de juego. Los anuncios entre partidas se pueden quitar para siempre con la compra única <strong>Quitar anuncios</strong>. El SDK de anuncios de Google se inicia al abrir la Aplicación y trata los datos indicados arriba; Google también puede usarlos según sus propias políticas. En el EEE, el Reino Unido y Suiza se muestra el formulario de consentimiento de Google antes de los anuncios; puedes cambiar tu elección en cualquier momento en <em>Ajustes → Opciones de privacidad</em>. Puedes restablecer o eliminar tu ID de publicidad en los ajustes del dispositivo. El contenido publicitario se limita a clasificaciones aptas para familias (PG).<br>
+  Política de Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> · <a href="https://policies.google.com/technologies/partner-sites">Cómo usa Google la información de sitios asociados</a></p>
+
+  <h4>2.2 Compras (Google Play Billing)</h4>
+  <p>Las compras dentro de la aplicación se gestionan exclusivamente mediante <strong>Google Play Billing</strong>. Nunca recibimos tus datos de pago (como el número de tarjeta). Google Play entrega a la Aplicación un registro de compra para que tu artículo se entregue y se restaure tras reinstalar.</p>
+
+  <h4>2.3 Unity Technologies</h4>
+  <p>La Aplicación está creada con el motor Unity. Cuando haces o intentas una compra, y cuando se confirman compras existentes, la biblioteca de compras de Unity (<strong>Unity IAP</strong>) envía eventos de compra a Unity: el producto, el registro de compra de Google Play y su firma, la versión de la app, el modelo del dispositivo, la versión del sistema, el idioma, el tamaño de almacenamiento y un ID de instalación aleatorio que Unity crea para esta instalación (y el ID de publicidad, si está activado). Unity usa estos datos para procesar e informar de las compras. La Aplicación también puede enviar informes de fallos y diagnóstico de errores a Unity (<strong>Unity Cloud Diagnostics</strong>): el mensaje de error y la traza de pila, las últimas líneas del registro, el modelo del dispositivo, la versión del sistema y la versión de la app. Los informes de fallos nunca incluyen tus fotos ni tus grabaciones.<br>
+  Política de Unity: <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a></p>
+
+  <h4>2.4 Estadísticas de uso (Google Analytics for Firebase)</h4>
+  <p>La Aplicación usa <strong>Google Analytics for Firebase</strong> para entender qué juegos se juegan y dónde abandonan los jugadores, y así mejorarla. Estas estadísticas <strong>nunca incluyen las fotos de tu mascota, tus grabaciones, el nombre de tu mascota ni ningún otro contenido que añadas</strong>. En el EEE, el Reino Unido y Suiza las estadísticas solo se recopilan después del formulario de consentimiento de Google y respetan tu elección en él (modo de consentimiento de Google); puedes cambiarla en cualquier momento en <em>Ajustes → Opciones de privacidad</em>. Los datos de analítica se conservan 14 meses y después se eliminan automáticamente. Las señales de Google están desactivadas.<br>
+  Política de Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> · <a href="https://firebase.google.com/support/privacy">Privacidad de Firebase</a></p>
+
+  <h3 id="es-3"><span class="num">3</span>Lo que no recopilamos</h3>
+  <p>No tenemos servidores y no recibimos tus datos personales directamente. La Aplicación no te pide nombre, correo, teléfono, ubicación precisa ni contactos, y no tiene cuentas. Aparte de los servicios indicados arriba, no contiene ningún otro SDK de analítica o seguimiento. No vendemos tus datos.</p>
+
+  <h3 id="es-4"><span class="num">4</span>Permisos</h3>
+  <div class="tbl"><table>
+    <tr><th>Permiso</th><th>Cuándo / por qué</th></tr>
+    <tr><td>Fotos / multimedia</td><td>Solo cuando eliges una foto (p. ej. "Añade tu Mascota"), mediante el selector del sistema.</td></tr>
+    <tr><td>Cámara</td><td>Solo cuando decides tomar una foto.</td></tr>
+    <tr><td>Micrófono</td><td>Solo cuando inicias una grabación o eliges "jugar con la voz".</td></tr>
+    <tr><td>Notificaciones (Android 13+)</td><td>Solo si lo permites cuando Android lo pregunta (p. ej. al abrir la Aplicación por primera vez o en la tarjeta del juego) o activas <em>Notificaciones</em> en Ajustes. Se usa solo para los recordatorios programados en el dispositivo descritos arriba.</td></tr>
+    <tr><td>Internet</td><td>Para cargar anuncios, procesar compras y enviar las estadísticas de uso y el diagnóstico descritos arriba. El juego se puede jugar sin conexión.</td></tr>
+  </table></div>
+
+  <h3 id="eliminar"><span class="num">5</span>Eliminar tus datos</h3>
+  <p>Puedes quitar las fotos de tu mascota con "Reiniciar" en la Aplicación, y la mayoría de las demás fotos y sonidos con la opción de reiniciar o eliminar que tienen al lado. "Mis Fotos" te permite ver y descargar tus fotos. Para eliminarlo todo de una vez, desinstala la Aplicación: esto elimina de forma permanente todos sus datos del dispositivo y restablece el ID de instalación de Unity y el ID de instancia de Firebase. Como las estadísticas de uso no están vinculadas a tu nombre, correo ni a ninguna cuenta, no se pueden localizar a partir de una dirección de correo; se eliminan automáticamente a los 14 meses. Puedes restablecer o eliminar tu ID de publicidad en los ajustes del dispositivo y gestionar tus datos de Google en <a href="https://myaccount.google.com">myaccount.google.com</a>. Para los datos que trata Unity, consulta la política de Unity indicada arriba o escríbenos y te ayudaremos a enviar tu solicitud. No guardamos datos tuyos en servidores propios, por lo que no hay cuenta que eliminar.</p>
+  <p><strong>Cómo solicitar la eliminación:</strong> envía un correo a <a href="mailto:zaxlonltd@gmail.com?subject=Play%20Your%20Pet%20-%20eliminar%20datos">zaxlonltd@gmail.com</a> con el asunto "Play Your Pet – eliminar datos". Te responderemos y enviaremos tu solicitud a Unity para los datos de compras y fallos que trata. <strong>Lo que se conserva:</strong> Google Play guarda tus registros de compra según sus propias políticas (p. ej. por motivos fiscales y de reembolso), y el progreso copiado por Android permanece en tu propia cuenta de Google hasta que lo elimines allí o desactives la copia de seguridad.</p>
+
+  <h3 id="es-6"><span class="num">6</span>Menores</h3>
+  <p>La Aplicación está destinada a usuarios de 13 años o más y no recopila a sabiendas datos personales de menores de 13 años. Si crees que un menor nos ha proporcionado datos, contáctanos.</p>
+
+  <h3 id="es-7"><span class="num">7</span>Seguridad y conservación</h3>
+  <p>Los datos del dispositivo se guardan en el almacenamiento privado de la Aplicación, protegido por el aislamiento de aplicaciones de Android, hasta que los elimines o desinstales la Aplicación. Los datos enviados a Google y Unity se cifran durante la transferencia y se conservan según sus políticas.</p>
+
+  <h3 id="es-web"><span class="num">8</span>Este sitio web</h3>
+  <p>zaxlongames.com es un sitio web estático alojado en GitHub Pages. No usa cookies ni herramientas de análisis, publicidad o seguimiento, y no carga fuentes, scripts ni videos de otras empresas. Tu navegador solo guarda tu idioma (en el almacenamiento local) y, durante una sola visita, el nombre de origen del enlace que abriste, por ejemplo <em>?src=tiktok</em> (en el almacenamiento de sesión). Ese nombre no contiene datos personales y solo se envía a Google Play cuando tocas el botón de Google Play, para que Google Play nos muestre cuántas instalaciones llegaron desde cada canal. Para ofrecer y proteger el sitio, GitHub trata las direcciones IP de los visitantes en sus registros de servidor (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Declaración de privacidad de GitHub</a>). Si nos escribes un correo, usamos tu mensaje solo para responderte.</p>
+
+  <h3 id="es-8"><span class="num">9</span>Cambios y contacto</h3>
+  <p>Si esta política se actualiza, la nueva versión se publicará en esta página con una nueva fecha de "última actualización". Preguntas: <a href="mailto:zaxlonltd@gmail.com">zaxlonltd@gmail.com</a></p>
+
+    </div>
+    <aside class="ask">
+      <img src="img/friends.jpg" width="560" height="560" alt="">
+      <div><h2>¿Algo no está claro?</h2><p>Escríbenos. El propio desarrollador lee y responde cada correo.</p><a class="btn" href="mailto:zaxlonltd@gmail.com?subject=Play%20Your%20Pet">Enviar correo</a></div>
+    </aside>
+  </section>
+  <p class="foot">© 2026 Zaxlon Games · Play Your Pet</p>
+</main>
+<script>
+(function () {
+  var secs = [].slice.call(document.querySelectorAll('.lang-sec'));
+  var pills = [].slice.call(document.querySelectorAll('.langs a'));
+  secs.forEach(function (s) {
+    // mobilde tablo hücrelerine sütun başlığı
+    [].forEach.call(s.querySelectorAll('table'), function (t) {
+      var heads = [].map.call(t.querySelectorAll('th'), function (h) { return h.textContent; });
+      [].forEach.call(t.querySelectorAll('tr'), function (r) { [].forEach.call(r.querySelectorAll('td'), function (c, i) { if (heads[i]) c.setAttribute('data-label', heads[i]); }); });
+    });
+    // "Bu sayfada" içindekiler
+    var toc = s.querySelector('.toc');
+    [].forEach.call(s.querySelectorAll('.doc h3'), function (h) {
+      var a = document.createElement('a'); a.href = '#' + h.id;
+      a.textContent = h.textContent.replace(/^\d+/, '').trim(); toc.appendChild(a);
+    });
+  });
+  function show(lang, scrollEl) {
+    secs.forEach(function (s) { s.classList.toggle('on', s.id === lang); });
+    pills.forEach(function (p) { p.setAttribute('aria-current', p.getAttribute('data-l') === lang ? 'true' : 'false'); });
+    var cur = document.getElementById(lang);
+    document.documentElement.lang = lang; document.title = cur.getAttribute('data-title');
+    try { localStorage.setItem('pyp_lang', lang); } catch (e) {}
+    if (scrollEl && scrollEl !== cur) scrollEl.scrollIntoView(); else window.scrollTo(0, 0);
+  }
+  function route() {
+    var id = decodeURIComponent(location.hash.slice(1)), el = id && document.getElementById(id);
+    var sec = el && (el.classList.contains('lang-sec') ? el : el.closest('.lang-sec'));
+    if (sec) { show(sec.id, el); return; }
+    var saved = null; try { saved = localStorage.getItem('pyp_lang'); } catch (e) {}
+    var nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    show(saved && document.getElementById(saved) ? saved : (nav === 'tr' || nav === 'es' ? nav : 'en'));
+  }
+  window.addEventListener('hashchange', route); route();
+})();
+</script>
+</body>
+</html>

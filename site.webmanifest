@@ -1,0 +1,11 @@
+{
+  "name": "Zaxlon",
+  "short_name": "Zaxlon",
+  "icons": [
+    { "src": "android-chrome-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "android-chrome-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#12A89A",
+  "background_color": "#F3EEE6",
+  "display": "standalone"
+}
